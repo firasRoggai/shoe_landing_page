@@ -18,11 +18,6 @@ function handleClick(event){
     switchContent(event.target.classList[1][4]) //passing the number of the btn clicked as an identifier
 }
 function switchContent(option){
-    let trans = `cont${Number(option)}`;
-    trans.classList.add('animate__fadeIn')
-    setTimeout(() => {
-        trans.classList.remove('animate__fadeIn')
-    }, 1000)
     switch (option) {
         case '1':
             cont1.classList.remove('d-none')
