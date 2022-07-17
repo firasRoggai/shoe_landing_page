@@ -1,0 +1,190 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn2 {
+  border: blue solid 1px;
+}
+
+.btn2:hover {
+  color: white;
+  background-color: #3333e4;
+  border: white solid 1px;
+}
+
+.flex, .myCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+/* ============================== */
+.content {
+  height: auto;
+}
+
+.hero {
+  height: 40vh;
+}
+
+.hero .shoe {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: rotate(22deg);
+          transform: rotate(22deg);
+}
+
+.blop {
+  position: absolute;
+  top: -50px;
+  right: 0px;
+  height: 50%;
+  width: 50%;
+  z-index: -1;
+}
+
+.header {
+  font-size: 3rem;
+}
+
+.myContainer {
+  width: 93%;
+  margin: auto;
+}
+
+/* ============================== */
+.section-2 {
+  margin: 7rem 0rem 0rem 0rem;
+  background-color: #d5edf5;
+}
+
+.button-list-2 {
+  margin: auto;
+  max-width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cards-container {
+  min-height: 50vh;
+}
+
+.myCard {
+  border: 1px solid black;
+  border-radius: 5%;
+  min-height: 50vh;
+  width: 27%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.myCard img {
+  width: 100%;
+}
+
+.section-3 {
+  padding: 2rem;
+}
+
+.storImage {
+  width: 26%;
+  border-radius: 9%;
+}
+
+footer {
+  background-color: #d5edf5;
+  display: -ms-grid;
+  display: grid;
+  place-items: center center;
+}
+
+/* ============ media queries =============== */
+@media (max-width: 480px) {
+  .section-2 {
+    margin: 3rem 0rem 0rem 0rem;
+  }
+  .button-list-2 {
+    display: none;
+  }
+  .blop {
+    display: none;
+  }
+  .header {
+    text-align: center;
+    width: 100%;
+    font-size: 1.8rem;
+  }
+  .header-text {
+    text-align: center;
+  }
+  .hero .shoe {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .myCard {
+    border: 1px solid black;
+    margin: 1rem 0rem;
+    border-radius: 5%;
+    min-height: 90vh;
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .myCard img {
+    width: 90%;
+  }
+  .myCard h3 {
+    font-size: 2rem;
+  }
+}
+
+/* ============================== */
+@media (min-width: 481px) and (max-width: 767px) {
+  .blop {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Portraite mode*/
+  .blop {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .blop {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
