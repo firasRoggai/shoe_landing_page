@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+$dark: #212529;
 @import './node_modules/animate.css/animate.css';
 a {text-decoration: none;}
 .btn2 {
@@ -66,6 +67,14 @@ a {text-decoration: none;}
 }
 .cards-container {
     min-height: 50vh;
+    display: none;
+}
+.isActive {
+    display: block !important;
+}
+.isActiveBtn {
+    background-color: $dark !important;
+    color: white !important;
 }
 .myCard {
     border: 1px solid black;
